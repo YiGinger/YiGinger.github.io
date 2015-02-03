@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BubbleChartID132654b25b8a</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- BubbleChart generated in R 3.0.3 by googleVis 0.4.7 package -->
+<!-- Mon Feb  2 21:28:19 2015 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataBubbleChartID132654b25b8a () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "0",
+4,
+0.1666367068,
+0,
+3076333 
+],
+[
+ "1",
+5,
+0.1963980859,
+1,
+1040891 
+],
+[
+ "2",
+3,
+0.1161191749,
+2,
+1309 
+],
+[
+ "3",
+0,
+0,
+3,
+17 
+],
+[
+ "4",
+1,
+0.1471774194,
+4,
+496 
+],
+[
+ "5",
+2,
+0.08956356736,
+5,
+2635 
+],
+[
+ "7",
+7,
+0.5312024353,
+7,
+1314 
+] 
+];
+data.addColumn('string','Banner.Position');
+data.addColumn('number','index');
+data.addColumn('number','Cick.Through.Rate');
+data.addColumn('number','Banner.Position.1');
+data.addColumn('number','Number.of.Click');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartBubbleChartID132654b25b8a() {
+var data = gvisDataBubbleChartID132654b25b8a();
+var options = {};
+
+
+
+    var chart = new google.visualization.BubbleChart(
+    document.getElementById('BubbleChartID132654b25b8a')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartBubbleChartID132654b25b8a);
+})();
+function displayChartBubbleChartID132654b25b8a() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID132654b25b8a"></script>
+ 
+<!-- divChart -->
+  
+<div id="BubbleChartID132654b25b8a"
+  style="width: 600px; height: 500px;">
+</div>
+ <div><span>Data: ban_pos &#8226; Chart ID: <a href="Chart_BubbleChartID132654b25b8a.html">BubbleChartID132654b25b8a</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.0.3 (2014-03-06) &#8226; <a href="http://code.google.com/p/google-motion-charts-with-r/">googleVis-0.4.7</a>
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart.html#Data_Policy">Data Policy</a>
+</span></div>
+</body>
+</html>
