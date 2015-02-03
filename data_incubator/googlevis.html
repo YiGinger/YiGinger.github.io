@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>BubbleChartID132654b25b8a</title>
+<title>BubbleChartID132663030a7e</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,14 +18,17 @@ body {
 </head>
 <body>
  <!-- BubbleChart generated in R 3.0.3 by googleVis 0.4.7 package -->
-<!-- Mon Feb  2 21:28:19 2015 -->
+<!-- Mon Feb  2 21:39:23 2015 -->
+<h2>
+    The Click Through Rate Vs Banner Position
+    </h2>
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartID132654b25b8a () {
+function gvisDataBubbleChartID132663030a7e () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -33,70 +36,70 @@ var datajson =
  "0",
 4,
 0.1666367068,
-0,
+"0",
 3076333 
 ],
 [
  "1",
 5,
 0.1963980859,
-1,
+"1",
 1040891 
 ],
 [
  "2",
 3,
 0.1161191749,
-2,
+"2",
 1309 
 ],
 [
  "3",
 0,
 0,
-3,
+"3",
 17 
 ],
 [
  "4",
 1,
 0.1471774194,
-4,
+"4",
 496 
 ],
 [
  "5",
 2,
 0.08956356736,
-5,
+"5",
 2635 
 ],
 [
  "7",
 7,
 0.5312024353,
-7,
+"7",
 1314 
 ] 
 ];
 data.addColumn('string','Banner.Position');
 data.addColumn('number','index');
 data.addColumn('number','Cick.Through.Rate');
-data.addColumn('number','Banner.Position.1');
+data.addColumn('string','col');
 data.addColumn('number','Number.of.Click');
 data.addRows(datajson);
 return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartID132654b25b8a() {
-var data = gvisDataBubbleChartID132654b25b8a();
+function drawChartBubbleChartID132663030a7e() {
+var data = gvisDataBubbleChartID132663030a7e();
 var options = {};
 
 
 
     var chart = new google.visualization.BubbleChart(
-    document.getElementById('BubbleChartID132654b25b8a')
+    document.getElementById('BubbleChartID132663030a7e')
     );
     chart.draw(data,options);
     
@@ -120,9 +123,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartID132654b25b8a);
+callbacks.push(drawChartBubbleChartID132663030a7e);
 })();
-function displayChartBubbleChartID132654b25b8a() {
+function displayChartBubbleChartID132663030a7e() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -146,18 +149,20 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID132654b25b8a"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID132663030a7e"></script>
  
 <!-- divChart -->
   
-<div id="BubbleChartID132654b25b8a"
+<div id="BubbleChartID132663030a7e"
   style="width: 600px; height: 500px;">
 </div>
- <div><span>Data: ban_pos &#8226; Chart ID: <a href="Chart_BubbleChartID132654b25b8a.html">BubbleChartID132654b25b8a</a></span><br /> 
+ <div><span>Data: ban_pos &#8226; Chart ID: <a href="Chart_BubbleChartID132663030a7e.html">BubbleChartID132663030a7e</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.0.3 (2014-03-06) &#8226; <a href="http://code.google.com/p/google-motion-charts-with-r/">googleVis-0.4.7</a>
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart.html#Data_Policy">Data Policy</a>
 </span></div>
+    
+    <h3>In this bubble chart, the size of the bubble represent the number of records for each position of banner and the horizontal value is the click-throuh-rate. The position of the banner is coded as number from 1 to 7. We can see that the click-through-rate for ads in different position are very different. </h3>
 </body>
 </html>
